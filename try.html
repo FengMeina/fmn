@@ -1,10 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>try</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{margin: 2px;padding: 0;}
+        .left{
+            width: 300px;
+            background: gainsboro;
+            position: absolute;
+        }
+        .right{
+            margin-left:350px;
+            z-index: 1;
+            background:gainsboro;
+        }
+        h2{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        h3{
+            font-size: 19px;
+            margin-bottom: 16px;
+            color: gray;
+        }
+        .author{
+            margin-bottom: 15px;
+            color: gray;
+        }
+        img{ margin: 10px 0;}
+        .form{
+            margin-bottom: 10px;
+        }
+        .info{
+            margin: 5px 0 15px 120px;
+            color: #9F9F9F;}
+        .button{
+            background: #3355d0;
+            margin-left: 30px;
+            width: 80%;
+            height: 38px;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .align{margin:80px; }
+        .align2{margin:50px; }
+        .moving{ margin: 5px 0 15px 120px; }
+    </style>
 </head>
 <body>
+<div class="left">
+    <div>
+        <h2>个人信息</h2>
+        <form action="#" method="post">
+            <div class="form">
+                <label for="email">请输入邮箱地址</label>
+                <input id="email" type="text">
+                <div class="info">邮箱地址按要求输入</div>
+            </div>
+            <div class="form">
+                <label for="password1">请输入登录密码</label>
+                <input id="password1" type="password">
+            </div>
+            <div class="form">
+                <label for="password2">请重复输入密码</label>
+                <input  id="password2" type="password">
+                <div class="info">密码为6-16位英文数字</div>
+            </div>
+            <div class="form">
+                <label class="align">性别</label>
+                <div>
+                    <input class="moving" id="male" type="radio" name="sex" value="男">
+                    <label for="male">男</label>
+                    <input id="female" type="radio" name="sex" value="女">
+                    <label for="female">女</label>
+                </div>
+            </div>
+            <div class="form">
+                <label class="align">城市</label>
+							<span class="moving">
+							<select name="" id="">
+                                <option value="北京">北京</option>
+                                <option value="上海">上海</option>
+                            </select>
+							</span>
+            </div>
+            <div class="form">
+                <label class="align">爱好</label>
+                <div>
+                    <input class="moving" type="checkbox" id="sport">
+                    <label for="sport">运动</label>
+                    <input type="checkbox" id="art">
+                    <label for="art">艺术</label>
+                </div>
 
+            </div>
+            <div class="form">
+                <label class="align2" for="description" >个人描述</label>
+                <textarea class="moving" name="" id="description" cols="15" rows="5" placeholder="请输入您的个人描述"></textarea>
+            </div>
+        </form>
+        <div class="form">
+            <input type="submit" value="确认提交" class="button">
+        </div>
+    </div>
+</div>
+<div class="right">
+    <div>
+        <div>
+            <div>
+                <h2>文章一级标题</h2>
+                <h3>文章二级标题</h3>
+                <p class="author"><span>文章作者</span> <span>文章发表时间</span></p>
+                <div class="content">
+                    <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                        这是一个很长很长的段落，换行了 <br>
+                        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                        这是一个很长很长的段落，换行了<br>
+                        这是一个很长很长的段落，这是一个很长很长的段落，
+                        <a href="https://www.baidu.com">
+                            这里有一个链接链接到https://www.baidu.com</a>
+                        这是一个很长很长的段落，这是一个很长很长的段落，
+                        <b>这里有个粗体字</b>
+                        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                        <i>这里有个斜体字</i>
+                        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                        这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+                        <br>
+                        <img src="/fmn/img/Hydrangeas.jpg" width="400" height="300" alt="Hydrangeas">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 </body>
 </html>
